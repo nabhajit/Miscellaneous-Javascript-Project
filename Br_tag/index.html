@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Line Breaks</title>
+</head>
+<body>
+    <p id="first-paragraph">This is the first paragraph.</p>
+    <div id="break-container"></div>
+    <p id="second-paragraph">This is the second paragraph.</p>
+
+    <button id="add-breaks-button">Add 40 Line Breaks</button>
+
+    <script>
+        document.getElementById('add-breaks-button').addEventListener('click', function() {
+            const container = document.getElementById('break-container');
+            
+            for (let i = 0; i < 40; i++) {
+                container.appendChild(document.createElement('br'));
+            }
+        });
+    </script>
+</body>
+</html>
